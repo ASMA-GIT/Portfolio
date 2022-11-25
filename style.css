@@ -82,8 +82,6 @@ li span{
 }
 #desc{
     width: 40vw;
-    font-size: 1.4vw;
-    color: rgb(175, 176, 184);
     margin-bottom: 5%;
 }
 
@@ -132,7 +130,6 @@ li span{
 /*about*/
 .about-me{
     width: 100%;
-
 }
 .about{
     width: 70%;
@@ -158,7 +155,7 @@ li span{
 }
 .descript{
     color: rgb(134, 136, 136);
-    font-size: 24px;
+    font-size: 1.5vw;
     margin: 5%;
 }
 .des-1{
@@ -185,7 +182,7 @@ li span{
 }
 .vert-line{
     width: 1.4px;
-    height: 250px;
+    height: 18vw;
     margin:0%;
     background: rgb(60, 60, 255);
 }
@@ -196,6 +193,7 @@ li span{
     color: rgb(134, 136, 136);
 }
 .skills ul li{
+    font-size: 1.5vw;
     margin-bottom: 10%;
     list-style: none;
     font-family: "poppins";
@@ -204,7 +202,9 @@ li span{
 .skills-desc{
     width: 30%;
     font-family: "poppins";
+    font-size: 1.5vw;
 }
+
 .skills-desc h2{
     color: aliceblue;
 }
@@ -233,6 +233,7 @@ li span{
     
 }
 .content ul{
+    font-size: 1.5vw;
     margin-top: 5%;
     line-height: 3.5vw;
 }
@@ -255,6 +256,7 @@ li span{
 }
 
 .pro-desc{
+    font-family: "poppins";
     color: rgb(158, 162, 172);
     width: 45vw;
     padding: 3vw;
@@ -284,11 +286,6 @@ li span{
     font-family: "poppins";
     font-size: 2vw;
 }
-
-.left-cont{
-    margin-top: 0%;
-}
-
 
 .Project2{
     margin-top: 10%;
@@ -331,11 +328,10 @@ div.contact{
     width: 70%;
     margin: auto;
     margin-top: 10%;
+    text-align: center;
 }
 
 .mail{
-    text-align: center;
-    margin: auto;
     padding: 5%;
     color:rgb(90, 90, 246); 
     font-family: "sono";
@@ -378,21 +374,43 @@ div.contact{
     }
 }
 
-
+/*TAB VIEW*/
 @media (min-width:740px) and (max-width:1180px) {
     .pro-desc,.pro_desc{
-        font-size: 2.2vw;
+        font-size: 1.5vw;
+    }
+    .triangle{
+        width: 30vw;
+        height: 60vw;
     }
 }
 
-
+/*PHONE VIEW*/
 @media (min-width: 280px) and (max-width: 740px){
+    .descript{
+        font-size: 2.8vw;
+    }
     .my-intrests{
-        margin-left: 10%;
+        margin-left: 20%;
         text-align: center;
+    }
+    .skills,.skills-desc{
+        font-size: 2.5vw;
+    }
+    .skills ul li{
+        font-size: 2.5vw;
+    }
+    .skills-desc{
+        width: 50%;
+    }
+    .skills-section{
+        justify-content: space-around;
     }
     .proj_photo,.right-cont{
         display: none;
+    }
+    .title,#project{
+        font-size: 3.2vw;
     }
     .container{
         margin: auto;
@@ -400,8 +418,37 @@ div.contact{
     .pro-desc,.pro_desc{
         width: 100%;
         margin:auto;
-        font-size: 3.5vw;
+        font-size: 2.8vw;
     }
+    .content ul li{
+        line-height: 8vw;
+        font-size: 3vw;
+    }
+    .triangle{
+        width: 40vw;
+        height: 70vw;
+    }
+    #desc{
+        margin-top: 16%;
+        width:3vw ;
+    }
+    #res{
+        padding: 9px 18px;
+    }
+    .line{
+        display: none;
+    }
+    .about,.work-experience,.projects,div.contact{
+        width: 80%;
+        margin: auto;
+    }
+    div.contact{
+        margin-top: 5%;
+    }
+    .mail{
+        font-size: 2.8vw;
+    }
+    
     
 }
 @media (min-width: 600px) and (max-width: 740px){
@@ -412,21 +459,3 @@ div.contact{
     
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-.demo{
-    background: -webkit-linear-gradient(rgb(26, 23, 216), rgb(0, 0, 0));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
